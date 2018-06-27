@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Memory Game</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.prefix.css">
+  <link rel="icon" type="image/png" href="img/mushroom.png">
+  <!-- Custome Internal Style -->
+  <style>
+  #progressTimer {
+    width:auto;
+    height:5px;
+}
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container-fluid">
+
+  <!-- Row for start button -->
+    <div class="row py-3">
+      <div class="col-md-12">
+        <!-- Start button Option HTML  -->
+        <input type="button" class="btn btn-success" name="gameDisplay" value="Start" onclick="showDiv()" />
+        <!-- /.Start button Option HTML -->
+      </div>
+    </div>
+  <!-- /. Row for start button -->
+
+  <!-- Row for Score -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="display-4" id="displayScore" style="display:none;">
+          Score:
+          <span id="score"></span>
+        </div>
+    
+      </div>
+    </div>
+  <!-- /.Row for Score -->
+
+  <!-- Row for timer -->
+  <div class="row"   >
+    <div class="col-md-12">
+      <div id="displayTime" style="display:none;">
+      <div id="progressTimer" ></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- /.Row for timer -->
+
+  <!-- Row for Game Display -->
+    <div class="row">
+      <div class="col-md-12">
+        <!-- related JS in script.babel.js -->
+        <div id="game" style="display:none;" class="startDiv"></div>
+        <!-- /.related JS in script.babel.js -->
+      </div>
+    </div>
+ <!-- /.Row for Game Display -->
+
+  </div>
+
+
+  <script>
+      $("#progressTimer").progressTimer({
+        timeLimit: 52,
+        warningThreshold: 49,
+        baseStyle: "progress-bar-warning",
+        warningStyle: "progress-bar-danger",
+        completeStyle: "progress-bar-info",
+        onFinish: function () {
+          console.log("I'm done");
+        }
+      });
+    </script>
+
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Game JS -->
+  <script src="js/script.babel.js"></script>
+
+  <!-- Internal JS -->
+  <!-- Custom Javascript -->
+  <script>
+    // Function for showing the game display
+    function showDiv() {
+      document.getElementById('game').style.display = "block";
+      document.getElementById('displayScore').style.display = "block";
+      document.getElementById('displayTime').style.display = "block";
+    }
+    // ;Function for showing the game display
+  </script>
+
+  <!-- Custom JQuery -->
+
+</body>
+
+</html>
