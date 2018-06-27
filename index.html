@@ -14,10 +14,7 @@
   <link rel="icon" type="image/png" href="img/mushroom.png">
   <!-- Custome Internal Style -->
   <style>
-  #progressTimer {
-    width:auto;
-    height:5px;
-}
+ 
   </style>
 
 </head>
@@ -49,13 +46,7 @@
   <!-- /.Row for Score -->
 
   <!-- Row for timer -->
-  <div class="row"   >
-    <div class="col-md-12">
-      <div id="displayTime" style="display:none;">
-      <div id="progressTimer" ></div>
-      </div>
-    </div>
-  </div>
+
 
   <!-- /.Row for timer -->
 
@@ -71,19 +62,6 @@
 
   </div>
 
-
-  <script>
-      $("#progressTimer").progressTimer({
-        timeLimit: 52,
-        warningThreshold: 49,
-        baseStyle: "progress-bar-warning",
-        warningStyle: "progress-bar-danger",
-        completeStyle: "progress-bar-info",
-        onFinish: function () {
-          console.log("I'm done");
-        }
-      });
-    </script>
 
   <!-- JQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
