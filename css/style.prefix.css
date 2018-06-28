@@ -8,6 +8,7 @@
 body {
   margin: 20px 0;
   background: #6589F9;
+  font-family: 'Marcellus SC', serif;
 }
 
 .grid {
@@ -67,4 +68,8 @@ body {
 
 .match .front {
   background: #6589F9 !important;
+}
+
+#startButton {
+  font-size: xx-large;
 }

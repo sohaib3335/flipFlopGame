@@ -26,18 +26,18 @@ var cardsArray = [{
 }, {
   'name': 'mushroom',
   'img': 'img/mushroom.png'
-// }, {
-//   'name': 'thwomp',
-//   'img': 'img/thwomp.png'
-// }, {
-//   'name': 'bulletbill',
-//   'img': 'img/bulletbill.png'
-// }, {
-//   'name': 'coin',
-//   'img': 'img/coin.png'
-// }, {
-//   'name': 'goomba',
-//   'img': 'img/goomba.png'
+ }, {
+   'name': 'thwomp',
+   'img': 'img/thwomp.png'
+ }, {
+   'name': 'bulletbill',
+   'img': 'img/bulletbill.png'
+ }, {
+   'name': 'coin',
+   'img': 'img/coin.png'
+ }, {
+   'name': 'goomba',
+   'img': 'img/goomba.png'
 }];
 
 var gameGrid = cardsArray.concat(cardsArray).sort(function () {
