@@ -3,41 +3,68 @@ var score = 0;
 'use strict';
 
 var cardsArray = [{
-  'name': 'shell',
-  'img': 'img/blueshell.png'
+  'name': 'img1',
+  'img': 'images/img1.png'
 }, {
-  'name': 'star',
-  'img': 'img/star.png'
+  'name': 'img2',
+  'img': 'images/img2.png'
 }, {
-  'name': 'bobomb',
-  'img': 'img/bobomb.png'
+  'name': 'img3',
+  'img': 'images/img3.png'
 }, {
-  'name': 'mario',
-  'img': 'img/mario.png'
+  'name': 'img4',
+  'img': 'images/img4.png'
 }, {
-  'name': 'luigi',
-  'img': 'img/luigi.png'
+  'name': 'img5',
+  'img': 'images/img5.png'
 }, {
-  'name': 'peach',
-  'img': 'img/peach.png'
+  'name': 'img6',
+  'img': 'images/img6.png'
 }, {
-  'name': '1up',
-  'img': 'img/1up.png'
+  'name': 'img7',
+  'img': 'images/img7.png'
 }, {
-  'name': 'mushroom',
-  'img': 'img/mushroom.png'
+  'name': 'img8',
+  'img': 'images/img8.png'
  }, {
-   'name': 'thwomp',
-   'img': 'img/thwomp.png'
+   'name': 'img9',
+   'img': 'images/img9.png'
  }, {
-   'name': 'bulletbill',
-   'img': 'img/bulletbill.png'
+   'name': 'img10',
+   'img': 'images/img10.png'
  }, {
-   'name': 'coin',
-   'img': 'img/coin.png'
+   'name': 'img11',
+   'img': 'images/img11.png'
  }, {
-   'name': 'goomba',
-   'img': 'img/goomba.png'
+   'name': 'img12',
+   'img': 'images/img12.png'
+}, {
+  'name': 'img13',
+  'img': 'images/img13.png'
+}, {
+  'name': 'img14',
+  'img': 'images/img14.png'
+}, {
+  'name': 'img15',
+  'img': 'images/img15.png'
+}, {
+  'name': 'img16',
+  'img': 'images/img16.png'
+}, {
+  'name': 'img17',
+  'img': 'images/img17.png'
+}, {
+  'name': 'img18',
+  'img': 'images/img18.png'
+}, {
+  'name': 'img19',
+  'img': 'images/img19.png'
+}, {
+  'name': 'img20',
+  'img': 'images/img20.png'
+}, {
+  'name': 'img21',
+  'img': 'images/img21.png'
 }];
 
 var gameGrid = cardsArray.concat(cardsArray).sort(function () {
